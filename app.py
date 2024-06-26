@@ -4,12 +4,12 @@ import pickle
 
 app = Flask(__name__)
 
-model = pickle.load(open('model_new.pkl', 'rb'))
+#model = pickle.load(open('model_new.pkl', 'rb'))
 
 @app.route('/')
 def home():
-    return render_template('index.html')
-
+    return 'hello' #render_template('index.html')
+'''
 @app.route('/predict',methods=['POST'])
 def predict():
     '''
@@ -23,6 +23,6 @@ def predict():
 
     return render_template('index.html', prediction_text='Employee Salary should be $ {}'.format(output))
 
-
+'''
 if __name__ == "__main__":
     app.run(debug=True)
