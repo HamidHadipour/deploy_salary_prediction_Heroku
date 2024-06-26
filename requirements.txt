@@ -5,7 +5,7 @@ contourpy==1.2.1
 cycler==0.12.1
 Flask==1.1.1
 fonttools==4.53.0
-gunicorn==19.9.0
+gunicorn
 itsdangerous==1.1.0
 Jinja2==3.0.3
 joblib==1.4.2
